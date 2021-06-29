@@ -94,7 +94,7 @@ def add_users_to_group():
                 sys.exit("Invalid Mode Selected. Please Try Again.")
             client(InviteToChannelRequest(target_group_entity,[user_to_add]))
             print("Waiting 60 Seconds...")
-            time.sleep(60)
+            time.sleep(10)
         except PeerFloodError:
             print("Getting Flood Error from Telegram. You should stop script now.Please try again after some time.")
         except UserPrivacyRestrictedError:
